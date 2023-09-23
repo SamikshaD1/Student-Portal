@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        body{
+            padding: 10px;
+        }
+        .navbar{
+            display: flex;
+            padding-bottom: 1.5vw;
+            justify-content: space-between;
+           height: 66px;
+
+        }
+        
+        button{
+            width:18vw;
+           height: 66px;
+           background: #000;
+           color: #FFF;
+           font-family: Inter;
+           font-size: 24px;
+           font-weight: 400;
+         }
+
+
+        .search,input{
+            width: 80%;
+            height: 65px;
+            background: #D9D9D9;
+        }
+        input{
+            border: none;
+            color: #000;
+            width: 100%;
+             font-family: Inter;
+             font-size: 24px;
+             font-weight: 400;
+             border: 1px solid #000;
+        }
+        .sort{
+            display: flex;
+              gap: 1vw;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+             height: 65px;
+             flex-shrink: 0;
+        }
+        table{
+           width: 100%;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- Search-Bar- Section  -->
+        <div class="navbar">
+            <div class="search">
+                <input type="text" id="Search-Bar-" name="search" placeholder="search"></input>
+            </div>
+            <div class="searchbutton">
+                <button>Search</button>
+            </div>
+        </div>
+
+        <!-- sort-Section  -->
+        <div class="sort">
+            <button id="sortButton">Sort A->Z</button>
+            <button >Sort Z->A</button>
+            <button >Sort By Marks</button>
+            <button >Sort By Passing</button>
+            <button>Sort By Class</button>
+            <button>Sort By Gender</button>
+        </div>
+        <!-- table-Section  -->
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                    <th>Marks</th>
+                    <th>Passing</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+        </table>
+
+        <script src="employ.js"></script>
+    </body>
+</html>
